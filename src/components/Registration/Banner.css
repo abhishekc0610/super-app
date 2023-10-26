@@ -1,0 +1,22 @@
+.banner {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background-image: url(../../assets/RegistrationAssets/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner p {
+    position: absolute;
+    left: 4vw;
+    bottom: 20px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 141.688%;
+    letter-spacing: 0.06rem;
+}
