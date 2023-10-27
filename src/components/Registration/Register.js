@@ -84,7 +84,7 @@ function Register() {
 
     if (Object.keys(validationErrors).length === 0) {
       localStorage.setItem("formData", JSON.stringify(cred));
-      
+
       setTimeout(() => {
         navigate("/category");
       }, 1200);
@@ -159,10 +159,10 @@ function Register() {
             //   console.log(cred);
             // }}
           >
-            Sign up
+            SIGN UP
           </button>
           <p className="tnc">
-            By clicking on Sign up. you agree to Superapp
+            By clicking on Sign up. you agree to Superapp{" "}
             <span>Terms and Conditions of Use</span>
           </p>
           <p className="extra-info">
