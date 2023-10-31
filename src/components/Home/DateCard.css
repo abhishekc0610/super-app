@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.date-main {
+    height: 35%;
+    border-radius: 2.08925rem;
+    background: #101744;
+}

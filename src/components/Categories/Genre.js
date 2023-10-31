@@ -29,7 +29,7 @@ function Genre() {
       setFlag(true);
     } else {
       setFlag(false);
-      navigate("/profile");
+      navigate("/");
     }
   };
 

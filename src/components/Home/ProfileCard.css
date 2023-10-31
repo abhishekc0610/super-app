@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-main {
+    height: 60%;
+    border-radius: 2.08925rem;
+    background-color: #5746EA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.profile-img {
+    height: 90%;
+    width: 30%;
+}
+
+.profile-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.form-genre {
+    height: 80%;
+    width: 60%;
+}
+
+.form-data {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-data p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 103.188%;
+    letter-spacing: 0.07rem;
+}
+
+.form-data p:nth-child(3) {
+    font-size: 2.8vw;
+    font-weight: 800;
+}
+

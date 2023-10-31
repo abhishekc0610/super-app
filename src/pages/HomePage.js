@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Main from "../components/Home/Main";
 
 function HomePage() {
   return (
     <>
-      <p>Go to Registration Page</p>
+      <Main />
     </>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
