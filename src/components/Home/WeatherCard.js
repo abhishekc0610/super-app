@@ -47,7 +47,7 @@ function WeatherCard() {
 
     const dateFormat = `${month}-${dt}-${year}`;
     setDate(dateFormat);
-  });
+  }, [weather.last_updated]);
 
   useEffect(() => {
     const currDate = new Date(weather.last_updated);
@@ -66,7 +66,7 @@ function WeatherCard() {
 
     const timeFormat = `${hour}:${min} ${timeZone}`;
     setTimne(timeFormat);
-  });
+  }, [weather.last_updated]);
 
   return (
     <>
