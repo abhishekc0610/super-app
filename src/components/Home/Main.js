@@ -2,7 +2,7 @@ import React from 'react'
 
 // Components
 import ProfileCard from './ProfileCard'
-import DateCard from './DateCard'
+import WeatherCard from './WeatherCard'
 import NewsCard from './NewsCard'
 
 // style
@@ -13,7 +13,7 @@ function Main() {
     <div className='home-container'>
       <div className="left-home">
         <ProfileCard />
-        <DateCard />
+        <WeatherCard />
       </div>
       <div className="right-home">
         <NewsCard />

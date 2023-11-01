@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.date-main {
+    height: 35%;
+    border-radius: 2.08925rem;
+}
+
+.weather-head {
+    height: 35%;
+    width: 100%;
+    background-color: #FF4ADE;
+    border-radius: 1.1875rem 1.1875rem 0rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.weather-foot {
+    height: 65%;
+    width: 100%;
+    background-color: #101744;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0rem 0rem 1.1875rem 1.1875rem;
+
+}
+
+.vertical-line {
+    border-left: 3px solid #fff;
+    height: 50%;
+}
+
+.weather-first-box,
+.weather-second-box,
+.wind-pressure,
+.weather-third-box,
+.wind-speed,
+.humidity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-first-box img {
+    width: 5vw;
+    height: 13vh;
+    margin-top: -15px;
+}
+
+.weather-first-box p,
+.weather-second-box h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%;
+}
+
+.weather-first-box p {
+    font-size: 1.7rem;
+    margin-top: -15px;
+}
+
+.weather-second-box h1 {
+    font-size: 2.9rem;
+}
+
+.wind-pressure,
+.wind-speed,
+.humidity {
+    flex-direction: row;
+    gap: 1.2vw;
+}
+
+.weather-third-box {
+    gap: 1.8vh;
+    padding-top: 7px;
+}
+
+.wind-speed,
+.humidity {
+    flex-direction: row;
+}
+
+.wind-speed img,
+.humidity img {
+    width: 2vw;
+    height: 4vh;
+}

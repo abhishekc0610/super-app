@@ -56,30 +56,28 @@ function NewsCard() {
     month = month < 10 ? `0${month}` : month;
     dt = dt < 10 ? `0${dt}` : dt;
 
-    const dateFormated = `${month}-${dt}-${year}`;
-    setDate(dateFormated);
+    const dateFormat = `${month}-${dt}-${year}`;
+    setDate(dateFormat);
   }, [news.publishedAt]);
 
   useEffect(() => {
     const publishedDate = new Date(news.publishedAt);
 
     let hour = publishedDate.getHours();
-    let min = publishedDate.getMinutes()
+    let min = publishedDate.getMinutes();
 
-    let timeZone = (hour < 12) ? "AM" : "PM";
+    let timeZone = hour < 12 ? "AM" : "PM";
     hour = hour % 12;
-    if(hour===0 && timeZone==='PM')  {
+    if (hour === 0 && timeZone === "PM") {
       hour = 12;
     }
 
-    hour = (hour < 10) ? `0${hour}` : hour;
-    min = (min < 10) ? `0${min}` : min;
+    hour = hour < 10 ? `0${hour}` : hour;
+    min = min < 10 ? `0${min}` : min;
 
-    const timeFormated = `${hour}:${min} ${timeZone}`;
-    setTimne(timeFormated);
-    
-
-  }, [news.publishedAt])
+    const timeFormat = `${hour}:${min} ${timeZone}`;
+    setTimne(timeFormat);
+  }, [news.publishedAt]);
 
   return (
     <div className="news-main">
@@ -89,7 +87,9 @@ function NewsCard() {
       >
         <div className="news-title">
           <h3>{news.title}</h3>
-          <p>{date} | {time}</p>
+          <p>
+            {date} | {time}
+          </p>
         </div>
       </div>
       <div className="news-foot">
