@@ -19,9 +19,9 @@
     justify-content: space-evenly;
     align-items: center;
     font-family: Roboto;
-    font-size: 2.3rem;
+    font-size: 1.8vw;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -33,7 +33,6 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 0rem 0rem 1.1875rem 1.1875rem;
-
 }
 
 .vertical-line {
@@ -47,15 +46,16 @@
 .weather-third-box,
 .wind-speed,
 .humidity {
+    height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .weather-first-box img {
     width: 5vw;
-    height: 13vh;
+    height: 11vh;
     margin-top: -15px;
 }
 
@@ -68,24 +68,30 @@
 }
 
 .weather-first-box p {
-    font-size: 1.7rem;
-    margin-top: -15px;
+    font-size: 1.2vw;
+    margin-top: -13px;
 }
 
 .weather-second-box h1 {
-    font-size: 2.9rem;
+    font-size: 1.8vw;
 }
 
 .wind-pressure,
 .wind-speed,
 .humidity {
     flex-direction: row;
-    gap: 1.2vw;
+    gap: 0.8vw;
 }
 
-.weather-third-box {
-    gap: 1.8vh;
-    padding-top: 7px;
+.wind-pressure p,
+.wind-speed p,
+.humidity p {
+    font-size: 0.8vw;
+}
+
+.wind-pressure img {
+    width: 0.8vw;
+    height: 3vh;
 }
 
 .wind-speed,
@@ -95,6 +101,6 @@
 
 .wind-speed img,
 .humidity img {
-    width: 2vw;
-    height: 4vh;
+    width: 1.2vw;
+    height: 2vh;
 }

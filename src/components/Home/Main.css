@@ -12,18 +12,49 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 60px 9vw;
+    padding: 40px 9vw;
 }
 
 
 .left-home {
-    display: flex;
-    width: 60%;
+    width: 65%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.left-home-top {
+    height: 60.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-weather {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-notes {
+    height: 100%;
+    width: 40%;
+    border-radius: 1.1875rem;
+    background: #F1C75B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-home-bottom {
+    height: 35%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
 .right-home {
     width: 30%;
     height: 100%;

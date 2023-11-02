@@ -103,6 +103,6 @@
     margin: 15px 0;
 }
 
-span {
+.tnc span, .extra-info span {
     color: #72DB73;
 }

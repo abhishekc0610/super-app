@@ -22,7 +22,7 @@ function WeatherCard() {
       await axios
         .get(`http://api.weatherapi.com/v1/current.json?q=mumbai&key=${apiKey}`)
         .then((data) => {
-          // console.log(data.data.current.last_updated);
+          // console.log(data.data.current);
           setWeather(data.data.current);
           setFlag(true);
         })

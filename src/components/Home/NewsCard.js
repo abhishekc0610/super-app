@@ -31,7 +31,7 @@ function NewsCard() {
 
       await axios
         .get(
-          `https://newsapi.org/v2/everything?q=india&sortBy=popularity&apiKey=${apiKey}`
+          `https://newsapi.org/v2/everything?q=india&sortBy=publishedAt&apiKey=${apiKey}`
         )
         .then((data) => {
           // console.log(data.data.articles[0]);

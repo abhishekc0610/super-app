@@ -7,11 +7,9 @@ import "./ProfileCard.css";
 import profile from "../../assets/HomeAssets/profile.png";
 
 function ProfileCard() {
-  const formData = JSON.parse(localStorage.getItem("formData"))
-  const GenreData = JSON.parse(localStorage.getItem("selectedGenres"))
-  // console.log({formData, GenreData});
-  
-
+  const formData = JSON.parse(localStorage.getItem("formData"));
+  const GenreData = JSON.parse(localStorage.getItem("selectedGenres"));
+  // console.log({ formData, GenreData });
 
   return (
     <div className="profile-main">
@@ -25,7 +23,9 @@ function ProfileCard() {
           <p>{formData.userName}</p>
         </div>
         <div className="genre-data">
-
+          {GenreData.map((item) => {
+            return <span>{item}</span>;
+          })}
         </div>
       </div>
     </div>

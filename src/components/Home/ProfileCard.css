@@ -5,7 +5,7 @@
 }
 
 .profile-main {
-    height: 60%;
+    height: 58%;
     border-radius: 2.08925rem;
     background-color: #5746EA;
     display: flex;
@@ -26,7 +26,10 @@
 
 .form-genre {
     height: 80%;
-    width: 60%;
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .form-data {
@@ -39,15 +42,58 @@
 .form-data p {
     color: #FFF;
     font-family: Roboto;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 103.188%;
+    line-height: 130%;
     letter-spacing: 0.07rem;
 }
 
 .form-data p:nth-child(3) {
-    font-size: 2.8vw;
+    font-size: 2.4vw;
     font-weight: 800;
 }
+
+.genre-data {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 40%;
+    width: 100%;
+    padding: 3px;
+}
+
+.genre-data span {
+    border-radius: 1.3125rem;
+    background-color: #9F94FF;
+    width: 40%;
+    height: 45%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1vw;
+    align-items: center;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 7px #9F94FF; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #9F94FF; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aca5e4; 
+  }
 
